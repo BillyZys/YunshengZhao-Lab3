@@ -6,8 +6,8 @@ jobs:
   yunshenglab3build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Setup Lab 3 Java JDK
+    - uses: actions/checkout@v2
     - uses: actions/setup-java@v4.7.0
       with:
         java-version: '11'
@@ -19,8 +19,8 @@ jobs:
     needs: yunshenglab3build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Set up JDK 11
+    - uses: actions/checkout@v2
     - uses: actions/setup-java@v4.7.0
       with:
         java-version: '11'
